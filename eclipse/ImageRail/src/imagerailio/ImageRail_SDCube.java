@@ -779,10 +779,10 @@ public class ImageRail_SDCube
 				if (values == null)
 					return null;
 				Float[][] vals = (Float[][]) values.getData();
-				int len = vals[0].length;
+				int len = vals.length;
 				out = new float[len];
 				for (int i = 0; i < len; i++)
-					out[i] = vals[0][i].floatValue();
+					out[i] = vals[i][0].floatValue();
 			}
 			if(out==null)	
 				System.out.println("***Error reading well means");
@@ -840,10 +840,10 @@ public class ImageRail_SDCube
 				if (values == null)
 					return null;
 				Float[][] vals = (Float[][]) values.getData();
-				int len = vals[0].length;
+				int len = vals.length;
 				out = new float[len];
 				for (int i = 0; i < len; i++)
-					out[i] = vals[0][i].floatValue();
+					out[i] = vals[i][0].floatValue();
 			}
 			if(out==null)	
 				System.out.println("***Error reading well stdevs");
